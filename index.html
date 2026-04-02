@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuchhay Coffee Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor">
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+  </div>
+
+  <nav id="navbar">
+    <div class="nav-logo">Fuchhay<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Visit Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-tag">Est. 2019 · Phnom Penh</p>
+      <h1 class="hero-title">Where every<br>cup tells a <em>story</em></h1>
+      <p class="hero-subtitle">Handcrafted coffee made with love and the finest beans, served in a space that feels like home.</p>
+      <a href="#menu" class="hero-cta">
+        Explore Our Menu
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-coffee-visual">☕</div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Years Brewing</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12k+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Menu Items</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-left reveal">
+      <p class="section-tag">Our Story</p>
+      <h2 class="section-title">More than just <em>coffee</em></h2>
+      <p class="about-body">Fuchhay Coffee was born from a simple belief — that a great cup of coffee can change the pace of your entire day. We source our beans directly from local Cambodian farms, roast them in small batches, and serve every cup with care.</p>
+      <p class="about-body">Whether you're here for a quick espresso or a long afternoon with a book, we want you to feel at home.</p>
+    </div>
+    <div class="about-right reveal">
+      <div class="about-card">
+        <div class="about-card-icon">🌱</div>
+        <div class="about-card-title">Locally Sourced</div>
+        <p class="about-card-text">Direct partnerships with Cambodian coffee farmers for the freshest beans.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🔥</div>
+        <div class="about-card-title">Small Batch Roasted</div>
+        <p class="about-card-text">Every roast is done in-house to preserve the full depth of flavour.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🍵</div>
+        <div class="about-card-title">Made With Care</div>
+        <p class="about-card-text">Our baristas train for months before serving their first cup.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🏠</div>
+        <div class="about-card-title">A Place to Belong</div>
+        <p class="about-card-text">Designed to feel like your favourite corner of home.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="menu">
+    <div class="menu-header reveal">
+      <div>
+        <p class="section-tag">What We Serve</p>
+        <h2 class="section-title">Our <em>Menu</em></h2>
+      </div>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="hot">Hot Drinks</button>
+        <button class="filter-btn" data-filter="cold">Cold Drinks</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+      </div>
+    </div>
+    <div class="menu-grid reveal">
+      <div class="menu-card visible" data-cat="hot">
+        <div class="menu-card-img hot"><span>☕</span><span class="menu-card-badge">Bestseller</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Signature Espresso</div>
+          <p class="menu-card-desc">Double shot of our house blend with a rich crema and deep chocolate notes.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$4.50</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card visible" data-cat="hot">
+        <div class="menu-card-img hot"><span>🥛</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Caramel Latte</div>
+          <p class="menu-card-desc">Velvety steamed milk, espresso, and our house-made caramel drizzle.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.50</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card visible" data-cat="hot">
+        <div class="menu-card-img hot"><span>🍫</span><span class="menu-card-badge">New</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Mocha Supreme</div>
+          <p class="menu-card-desc">Espresso blended with dark chocolate and topped with whipped cream.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$6.00</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="cold">
+        <div class="menu-card-img cold"><span>🧊</span><span class="menu-card-badge">Refreshing</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Cold Brew Classic</div>
+          <p class="menu-card-desc">Slow-steeped for 18 hours, smooth and naturally sweet with zero bitterness.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$6.50</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="cold">
+        <div class="menu-card-img cold"><span>🥤</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Iced Matcha Latte</div>
+          <p class="menu-card-desc">Premium ceremonial matcha, oat milk, and a touch of honey over ice.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$6.00</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="cold">
+        <div class="menu-card-img cold"><span>🍹</span><span class="menu-card-badge">Summer</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Passion Fruit Fizz</div>
+          <p class="menu-card-desc">Sparkling water, fresh passion fruit and a hint of vanilla syrup.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.00</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="food">
+        <div class="menu-card-img food"><span>🥐</span><span class="menu-card-badge">Fresh Daily</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Butter Croissant</div>
+          <p class="menu-card-desc">Flaky, golden, and baked fresh every morning. Best paired with a latte.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$4.00</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="food">
+        <div class="menu-card-img food"><span>🍰</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Coffee Cheesecake</div>
+          <p class="menu-card-desc">House-made espresso cheesecake with a graham cracker base.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$7.50</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" data-cat="food">
+        <div class="menu-card-img food"><span>🥪</span></div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">Toasted Focaccia</div>
+          <p class="menu-card-desc">Herb focaccia with roasted tomato, pesto and buffalo mozzarella.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$9.00</span>
+            <button class="menu-order-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="gallery">
+    <p class="section-tag reveal">The Space</p>
+    <h2 class="section-title reveal">Come see us <em>in person</em></h2>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item gi1">☕</div>
+      <div class="gallery-item gi2">🫘</div>
+      <div class="gallery-item gi3">🥐</div>
+      <div class="gallery-item gi4">🍵</div>
+      <div class="gallery-item gi5">✨</div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="contact-info reveal">
+      <p class="section-tag">Find Us</p>
+      <h2 class="section-title">Come say <em>hello</em></h2>
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-detail-label">Location</div>
+          <div class="contact-detail-val">123 Coffee Street, Phnom Penh, Cambodia</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-detail-label">Opening Hours</div>
+          <div class="contact-detail-val">Mon – Fri: 7:00am – 9:00pm</div>
+          <div class="contact-detail-val">Sat – Sun: 8:00am – 10:00pm</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-val">+855 12 345 678</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-val">hello@fuchhaycoffee.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <p class="section-tag">Send a Message</p>
+      <h2 class="section-title" style="font-size:1.8rem;">We'd love to <em>hear from you</em></h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Your last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+      <button class="submit-btn" onclick="sendMessage()">Send Message</button>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-logo">Fuchhay<span>.</span></div>
+    <p class="footer-note">Redesigned by <a href="#">Kheang Ly</a> · Built with HTML, CSS & JavaScript · Original by Fuchhay HS</p>
+  </footer>
+
+  <div class="toast" id="toast">☕ Message sent! We'll be in touch soon.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
